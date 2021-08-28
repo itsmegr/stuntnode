@@ -1,0 +1,20 @@
+POST http://localhost:3000/student/create
+Content-Type: application/json
+
+{
+    "name" : "govind Rathore3",
+    "contact" : "8769785549",
+    "class" : "xyz",
+    "year" : 17,
+    "subject" : ["s1", "s2", "theatre"],
+    "society" : ["swimming","swimming2"]
+}
+
+###
+GET http://localhost:3000/student/
+
+###
+GET  http://localhost:3000/student/q1
+
+###
+GET  http://localhost:3000/student/q2

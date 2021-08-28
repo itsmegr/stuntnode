@@ -1,0 +1,40 @@
+{
+    "/student": {
+        "/create (POST)": {
+            "body": {
+                "name" : "name of the student",
+                "contact" : "contact",
+                "class" : "string",
+                "year" : "age value in number",
+                "subject" : "array of strings ['','']",
+                "society" : "array of string(optional)"
+            },
+            "res": {
+                "status": 201,
+                "msg": "data inserted succesfully"
+            },
+            "error": {
+                "422": "Invalid data",
+                "500": "Internal Server Error"
+            }
+        },
+        "/ (GET)": {
+            "res": {
+                "status": 200,
+                "students": "user details"
+            }
+        },
+        "/q1 (GET)": {
+            "res": {
+                "status": 200,
+                "numberOfStudent": "number of students"
+            }
+        },
+        "/q2 (GET)": {
+            "res": {
+                "status": 200,
+                "students": "number of students"
+            }
+        }
+    }
+}
